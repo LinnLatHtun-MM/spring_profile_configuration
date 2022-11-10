@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+my:
+  greeting: Hello from spring_boot from Production
+  list:
+    values: one,two,three,four,five
+
+app:
+  name: Spring_boot_config Application
+  description: Welcome to ${app.name}
+
+my.connection: "Production YML!!"
+
+db:
+  connection: "{connectionString:'http://_____',username:'test',password:'test'}"
+  host: 127.0.0.3
+  port: 1003
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+##TO RETURN CONFIGURATIONS FOR UAT FOR MESSAGE MODEL TO RETURN
+message:
+  title: Hello from PROD (YML File)
+  description: This is from PROD environment (YML File)

@@ -1,0 +1,28 @@
+my:
+  greeting: Hello from spring_boot Default Configuration
+  list:
+    values: one,two,three,four,five
+
+app:
+  name: Spring_boot_config Application
+  description: Welcome to ${app.name}
+
+my.connection: "{connectionString:'http://_____',username:'root',password:'root'}"
+
+db:
+  connection: "{connectionString:'http://_____',username:'root',password:'root'}"
+  host: 127.0.0.1
+  port: 1200
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  profiles:
+    active: prod
+
+message:
+  valueFromMainConfig: This value is from main config file (Properties File)

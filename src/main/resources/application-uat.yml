@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+my:
+  greeting: Hello from spring_boot from UAT.
+  list:
+    values: one,two,three,four,five
+
+app:
+  name: Spring_boot_config Application
+  description: Welcome to ${app.name}
+
+my.connection: "UAT YML!!!"
+
+db:
+  connection: "{connectionString:'http://_____',username:'test',password:'test'}"
+  host: 127.0.0.2
+  port: 1000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+##TO RETURN CONFIGURATIONS FOR UAT FOR MESSAGE MODEL TO RETURN
+message:
+  title: Hello from UAT (YML File)
+  description: This is from UAT environment (YML File)
